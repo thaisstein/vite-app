@@ -14,11 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 <style>
 * {
-  cursor: url('/plane-icon.svg') 0 0, auto;
-}
-
-a, button, .btn-atech, img {
-  cursor: url('/plane-icon.svg') 0 0, pointer !important;
+  cursor: url('/plane-icon.svg') 0 0, auto !important;
 }
 
 html, body, #app {
