@@ -36,7 +36,7 @@ html, body, #app {
 }
 
 .main-layout {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
