@@ -1,41 +1,42 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
+const goToSite = () => {
+  window.open('https://www.atech.com.br/', '_blank');
+}
 defineProps<{ msg: string }>()
 
-const count = ref(0)
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
-  </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Learn more about IDE Support for Vue in the
-    <a
-      href="https://vuejs.org/guide/scaling-up/tooling.html#ide-support"
-      target="_blank"
-      >Vue Docs Scaling up Guide</a
-    >.
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+      <button type="button" class="btn-atech" @click="goToSite">
+        Acessar nosso site
+      </button>
+    </div>
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
+.btn-atech {
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: #1a1a1a; 
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px 2px #41ececaa;
+}
+
+.btn-atech:hover {
+  box-shadow: 0 0 25px 5px #41ececaa;
+  border-color: #41ecec;
+  transform: translateY(-2px);
+}
+
+.btn-atech:active {
+  transform: translateY(0);
 }
 </style>

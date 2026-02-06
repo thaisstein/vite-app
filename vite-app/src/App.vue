@@ -3,28 +3,52 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="main-layout">
+    <div class="content-wrapper">
+      <a href="https://www.atech.com.br/" target="_blank">
+        <img src="./assets/logo-atech.png" class="logo" alt="Atech logo" />
+      </a>
+      <HelloWorld msg="Bem-vindo à Atech" />
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
+<style>
+* {
+  cursor: url('/plane-icon.svg') 0 0, auto;
+}
 
-<style scoped>
+a, button, .btn-atech, img {
+  cursor: url('/plane-icon.svg') 0 0, pointer !important;
+}
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.content-wrapper {
+  text-align: center;
+}
+
 .logo {
-  height: 6em;
+  height: 8em;
   padding: 1.5em;
-  will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+  filter: drop-shadow(0 0 2em #41ececaa);
 }
 </style>
