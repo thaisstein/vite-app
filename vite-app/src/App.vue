@@ -67,11 +67,12 @@ html, body, #app {
 .logo {
   height: 120px;
   width: auto;
-  filter: drop-shadow(0 0 15px rgba(65, 236, 236, 0.2));
-  transition: transform 0.5s ease;
+  filter: drop-shadow(0 0 10px rgba(65, 236, 236, 0.2));
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .logo:hover {
-  transform: scale(1.15);
+  transform: scale(1.15) rotate(-5deg) translateY(-10px);
+    filter: drop-shadow(0 0 30px rgba(65, 236, 236, 0.8));
 }
 </style>
