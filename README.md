@@ -45,7 +45,7 @@ With that out of the way, let’s walk through the actual code.
 ### HelloWorld.vue
 
 - `script`: I use defineProps to catch the msg variable sent by the parent (App.vue). I also created a function called goToSite using TypeScript; it uses window.open method to launch the atech website in a new tab;
-- `html`: I have a container that displays the msg inside an <h1> tag using interpolation (how vue binds data into the html: `({{ msg }}`). My button uses the @click to trigger the goToSite function. Inside the button, I added an empty div called `btn-glow`, which is an element used for an animation effect;
+- `html`: I have a container that displays the msg inside a h1 tag using interpolation (how vue binds data into the html: `({{ msg }}`). My button uses the @click to trigger the goToSite function. Inside the button, I added an empty div called `btn-glow`, which is an element used for an animation effect;
 - `style`: I used the *scoped* attribute here, that ensures these styles only affect the target component. Some details of the choices made are:
     - The title uses text-transform: uppercase and a text-shadow;
     - I styled the button to look transparent with a border; on hover, I used `transform: translateY(-3px)` to make it lift up and added a strong `box-shadow` for a neon glow;
