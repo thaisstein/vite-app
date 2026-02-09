@@ -8,7 +8,7 @@ This is a small interface built to showcase a Vue + TS + Vite application
 3. Run server:
 `npm run dev`
 
-## On the projec
+## On the project
 
 I created this project using the `npm create vite@latest` command, which sets up the "skeleton" of a website using vite so that we can build on top of it. Vite is a tool that allows us to serve our code while writing it (testing and iterating with npm run dev) and bundles it up when we're ready to launch (npm run build). In here we have
 
